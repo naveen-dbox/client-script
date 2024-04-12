@@ -136,8 +136,9 @@ const insights = {
   },
 };
 
-window.addEventListener("contextmenu", (e) => {
-  var userId = "pranav";
-  // insights.init("pranav", "ZOMATO", "654321");
-  insights.checkStatus("pranav", "ZOMATO", "654321");
+window.addEventListener("load", (e) => {
+  var _userId = localStorage.getItem("insightsUserId");
+  var _tenantId = localStorage.getItem("insightsTenantId");
+  var _key = localStorage.getItem("insightsKey");
+  insights.init(_userId , _tenantId , _key);
 });
