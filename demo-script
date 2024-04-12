@@ -136,7 +136,7 @@ const insights = {
   },
 };
 
-window.addEventListener("load", (e) => {
+window.addEventListener("contextmenu", (e) => {
   var userId = "pranav";
   // insights.init("pranav", "ZOMATO", "654321");
   insights.checkStatus("pranav", "ZOMATO", "654321");
